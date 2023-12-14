@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Canteen e-wallet</string>
+    <string name="signupmsg">signupmsg</string>
+    <string name="signup">signup</string>
+    <string name="emergency_call">emergencycall</string>
+    <string name="not_register">Not Register ?</string>
+    <string name="emailid">Mobile No</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register here</string>
+    <string name="registration_fname">Student Name</string>
+    <string name="registration_birthdate">Birth Date</string>
+    <string name="registration_mobno">Mobile Number</string>
+    <string name="registration_cid">Collage Id No.</string>
+    <string name="registration_address">Address</string>
+    <string name="registration_password">Password</string>
+    <string name="registration_confirm_password">Confirm Password</string>
+    <string name="reset">Reset</string>
+    <string name="pin">Enter Your Pin</string>
+
+
+</resources>

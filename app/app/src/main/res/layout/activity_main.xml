@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/canteen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/u_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:entries="@array/usertype"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:backgroundTint="#C1C1C1"
+            android:textColor="@color/black"
+
+            />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textColorHint="@color/black"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:hint="@string/emailid"
+            android:drawableLeft="@drawable/user1"
+            android:minHeight="50dp"
+            android:maxLength="10"/>
+
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/padlock"
+            android:inputType="textPassword"
+            android:minHeight="50dp" />
+
+
+
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/etpass"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:minHeight="40dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/circular_bg"
+            android:backgroundTint="@color/colorPrimary"
+
+            />
+
+        <!--<TextView
+            android:id="@+id/login"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/login"/>-->
+
+
+        <LinearLayout
+            android:id="@+id/llRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/not_register"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/register"
+            android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

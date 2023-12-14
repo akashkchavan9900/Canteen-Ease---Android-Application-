@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="department">
+
+        <item>Select Department</item>
+        <item>Computer Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Information Technology</item>
+        <item>Civil Engineering</item>
+        <item>Pharmacy</item>
+        <item>MBa</item>
+
+
+    </string-array>
+
+    <string-array name="acadamic_year">
+        <item>Select Acadamic Year</item>
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Last Year</item>
+
+    </string-array>
+
+    <string-array name="usertype">
+        <item>Select User</item>
+        <item>Admin</item>
+        <item>User</item>
+
+
+    </string-array>
+
+</resources>

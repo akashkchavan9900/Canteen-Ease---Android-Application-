@@ -1,0 +1,118 @@
+CREATE TABLE `canteen_owner` (
+  `pk_id` int(11) NOT NULL,
+  `m_number` varchar(256) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `phone` varchar(256) NOT NULL,
+  `wallet` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `canteen_owner` (`pk_id`, `m_number`, `password`, `phone`, `wallet`) VALUES
+(1, '1', '12', '1', '200');
+
+CREATE TABLE `menu` (
+  `pk_id` int(11) NOT NULL,
+  `name` varchar(256) NOT NULL,
+  `quantity` varchar(256) NOT NULL,
+  `prize` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `money_transfer_transaction` (
+  `pk_id` int(11) NOT NULL,
+  `sender_phone` varchar(256) NOT NULL,
+  `receiver_phone` varchar(256) NOT NULL,
+  `amount` varchar(256) NOT NULL,
+  `created_date` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `payment_transaction` (
+  `pk_id` int(11) NOT NULL,
+  `sender_phone` varchar(256) NOT NULL,
+  `receiver_phone` varchar(256) NOT NULL,
+  `amount` varchar(256) NOT NULL,
+  `created_date` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `student_registration` (
+  `pk_id` int(11) NOT NULL,
+  `name` varchar(256) NOT NULL,
+  `dob` text NOT NULL,
+  `m_number` varchar(256) NOT NULL,
+  `college_id` varchar(256) NOT NULL,
+  `address` varchar(256) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `gender` varchar(256) NOT NULL,
+  `department` varchar(256) NOT NULL,
+  `acedemic_year` varchar(256) NOT NULL,
+  `wallet` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `canteen_owner`
+--
+ALTER TABLE `canteen_owner`
+  ADD PRIMARY KEY (`pk_id`);
+
+--
+-- Indexes for table `menu`
+--
+ALTER TABLE `menu`
+  ADD PRIMARY KEY (`pk_id`);
+
+--
+-- Indexes for table `money_transfer_transaction`
+--
+ALTER TABLE `money_transfer_transaction`
+  ADD PRIMARY KEY (`pk_id`);
+
+--
+-- Indexes for table `payment_transaction`
+--
+ALTER TABLE `payment_transaction`
+  ADD PRIMARY KEY (`pk_id`);
+
+--
+-- Indexes for table `student_registration`
+--
+ALTER TABLE `student_registration`
+  ADD PRIMARY KEY (`pk_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `canteen_owner`
+--
+ALTER TABLE `canteen_owner`
+  MODIFY `pk_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `menu`
+--
+ALTER TABLE `menu`
+  MODIFY `pk_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `money_transfer_transaction`
+--
+ALTER TABLE `money_transfer_transaction`
+  MODIFY `pk_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `payment_transaction`
+--
+ALTER TABLE `payment_transaction`
+  MODIFY `pk_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `student_registration`
+--
+ALTER TABLE `student_registration`
+  MODIFY `pk_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+COMMIT;
+
